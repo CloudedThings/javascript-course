@@ -10,34 +10,31 @@
     <br />
   </p>
 </p>
-
 <details open="open">
   <summary><h2 style="display: inline-block">Course Details</h2></summary>
   <ol>
-    <li><a href="#services-covered">Services covered</a>
-    <li><a href="#lab-description">Lab description</a></li>
-    </li>
-    <li><a href="#start-date">Start date</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>    
-    <li><a href="#labs">Labs</a></li>
-    <li><a href="#lab-files">Lab files</a></li>
+    <li><a href="#sections">Sections</a>
+    <li><a href="#course-description">Course description</a></li>
+    <li><a href="#start-date">Start date</a></li> 
+    <li><a href="#assignments">Assignments</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
+---
+
+## Sections
+1. [Introduction](./01-first-app)
+2. [Basics: Variable, Data Types, Operators & Functions](./02-starting-project)
+3. [Efficient Development]()
+4. [Workings with Control Structures (if Statements, Loops)]()
+5. [Behinds the Scenes & The Past (ES3, ES5)]()
+6. []()
 
 ---
 
-## Services Covered
-* 
+## Course description
 
----
-
-## Lab description
-
-
-### Learning Objectives
-
-* 
+52 hours video course with hands-on assignments.
 
 ---
 
@@ -47,17 +44,10 @@
 
 ---
 
-### Prerequisites
-* 
+### Assignments
+1. [Section 2](./Section-2)
+2. [Section 3]()
 
----
-
-### Labs
-1.
----
-
-### Lab files
-* 
 ---
 
 ### Acknowledgements
