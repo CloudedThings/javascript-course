@@ -12,11 +12,13 @@ function createAndWriteLog(operator, resultBeforeCalc, calcNumber) {
 }
 
 function calculateResult(calculationType) {
+    const enteredNumber = getUserInput();
     if (
         calculationType !== 'ADD' &&
         calculationType !== 'SUBTRACT' &&
         calculationType !== 'MULTIPLY' &&
-        calculationType !== 'DIVIDE'
+        calculationType !== 'DIVIDE' ||
+        !enteredNumber 
     ) {
         return;
     }
