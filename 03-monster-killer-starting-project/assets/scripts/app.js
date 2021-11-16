@@ -15,6 +15,7 @@ const enteredValue = prompt('Maximum life', 100);
 
 let chosenMaxLife = parseInt(enteredValue);
 let battleLog = [];
+let lastLoggedEntry;
 
 if (isNaN(chosenMaxLife) || chosenMaxLife <= 0) {
   chosenMaxLife = 100;
@@ -89,7 +90,7 @@ function attackMonster(attackType) {
   // } else if (attackType === ATTACK_STRONG) {
   //   maxDamage = STRONG_ATTACK_VALUE;
   //   logEvent = LOG_EVENT_PLAYER_STRONG_ATTACK;
-  // }
+// }
   const damage = dealMonsterDamage(maxDamage);
   currentMonsterHealth -= damage;
   writeToLog(logEvent, damage);
@@ -119,7 +120,18 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-  console.log(battleLog);
+  let i = 0;
+  for (const el of battleLog) {
+    if ((!lastLoggedEntry && lastLoggedEntry !== 0) || lastLoggedEntry < i) {
+      console.log(`#${i}`);
+      for (const key in el) {
+        console.log(`${key} => ${el[key]}`);
+      }
+      lastLoggedEntry = i;
+      break;
+    }
+    i++;
+  }
 }
 
 attackBtn.addEventListener('click', attackHandler);
